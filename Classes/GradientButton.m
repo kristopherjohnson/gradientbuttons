@@ -72,7 +72,7 @@
 
 - (void)addHighlightLayer {
     highlightLayer = [CALayer layer];
-    highlightLayer.backgroundColor = [UIColor colorWithWhite:0.75f alpha:0.9].CGColor;
+    highlightLayer.backgroundColor = [UIColor colorWithRed:0.25f green:0.25f blue:1.0f alpha:0.75].CGColor;
     highlightLayer.frame = self.layer.bounds;
     highlightLayer.hidden = YES;
     [self.layer insertSublayer:highlightLayer below:shineLayer];
