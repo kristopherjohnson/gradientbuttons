@@ -12,5 +12,7 @@
 
 }
 
+- (IBAction)colorButtonClicked:(UIButton *)sender;
+
 @end
 

@@ -10,4 +10,10 @@
 
 @implementation GradientButtonsViewController
 
+
+- (IBAction)colorButtonClicked:(UIButton *)sender {
+    self.view.backgroundColor = sender.backgroundColor;
+}
+
+
 @end
