@@ -29,6 +29,7 @@
 
 
 @interface GradientButton ()
+- (void)initLayers;
 - (void)initBorder;
 - (void)addShineLayer;
 - (void)addHighlightLayer;
@@ -43,19 +44,22 @@
 
 
 - (void)awakeFromNib {
-    [self initBorder];
-    [self addShineLayer];
-    [self addHighlightLayer];
+    [self initLayers];
 }
 
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self initBorder];
-        [self addShineLayer];
-        [self addHighlightLayer];
+        [self initLayers];
     }
     return self;
+}
+
+
+- (void)initLayers {
+    [self initBorder];
+    [self addShineLayer];
+    [self addHighlightLayer];
 }
 
 
