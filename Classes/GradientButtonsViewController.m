@@ -8,10 +8,13 @@
 
 #import "GradientButtonsViewController.h"
 
+
 @implementation GradientButtonsViewController
 
 
 - (IBAction)colorButtonClicked:(UIButton *)sender {
+    
+    // Set view's background to match button color
     self.view.backgroundColor = sender.backgroundColor;
 }
 
