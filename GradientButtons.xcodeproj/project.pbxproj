@@ -17,6 +17,7 @@
 		28D7ACF80DDB3853001CB0EB /* GradientButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GradientButtonsViewController.m */; };
 		4E3C4CBA1137F90B00AF695C /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C4CB91137F90B00AF695C /* GradientButton.m */; };
 		4E3C4CE21137FADF00AF695C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3C4CE11137FADF00AF695C /* QuartzCore.framework */; };
+		4EC1D1B31138AFEC00D05DDA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC1D1B21138AFEC00D05DDA /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4E3C4CB81137F90B00AF695C /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
 		4E3C4CB91137F90B00AF695C /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
 		4E3C4CE11137FADF00AF695C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4EC1D1B21138AFEC00D05DDA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* GradientButtons-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GradientButtons-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4EC1D1B21138AFEC00D05DDA /* Icon.png */,
 				2899E5210DE3E06400AC0155 /* GradientButtonsViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* GradientButtons-Info.plist */,
@@ -160,6 +163,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* GradientButtonsViewController.xib in Resources */,
+				4EC1D1B31138AFEC00D05DDA /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
