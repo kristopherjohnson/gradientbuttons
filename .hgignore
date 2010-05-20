@@ -3,4 +3,5 @@ syntax: glob
 build
 *~
 kdj.*
+.DS_Store
 
