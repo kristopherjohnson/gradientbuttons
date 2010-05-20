@@ -93,37 +93,22 @@
 }
 
 
+#pragma mark -
+#pragma mark Highlight button while touched
+
+
 - (void)addHighlightLayer {
     highlightLayer = [CALayer layer];
-    highlightLayer.backgroundColor = [UIColor colorWithRed:0.25f green:0.25f blue:1.0f alpha:0.75].CGColor;
+    highlightLayer.backgroundColor = [UIColor colorWithRed:0.25f green:0.25f blue:0.25f alpha:0.75].CGColor;
     highlightLayer.frame = self.layer.bounds;
     highlightLayer.hidden = YES;
     [self.layer insertSublayer:highlightLayer below:shineLayer];
 }
 
 
-#pragma mark -
-#pragma mark Highlight button while touched
-
-
-- (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
-    if ([super beginTrackingWithTouch:touch withEvent:event]) {
-        highlightLayer.hidden = NO;
-        return YES;
-    }
-    return NO;
-}
-
-
-- (void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
-    highlightLayer.hidden = YES;
-    [super endTrackingWithTouch:touch withEvent:event];
-}
-
-
-- (void)cancelTrackingWithEvent:(UIEvent *)event {
-    highlightLayer.hidden = YES;
-    [super cancelTrackingWithEvent:event];
+- (void)setHighlighted:(BOOL)highlight {
+    highlightLayer.hidden = !highlight;
+    [super setHighlighted:highlight];
 }
 
 
