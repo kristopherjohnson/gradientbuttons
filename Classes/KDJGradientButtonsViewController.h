@@ -27,9 +27,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KDJGradientButtonsViewController : UIViewController {
-
-}
+@interface KDJGradientButtonsViewController : UIViewController
 
 - (IBAction)colorButtonClicked:(UIButton *)sender;
 

@@ -29,10 +29,7 @@
 
 @class KDJGradientButtonsViewController;
 
-@interface KDJGradientButtonsAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    KDJGradientButtonsViewController *viewController;
-}
+@interface KDJGradientButtonsAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, strong) IBOutlet UIWindow *window;
 @property (nonatomic, strong) IBOutlet KDJGradientButtonsViewController *viewController;

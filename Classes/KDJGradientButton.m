@@ -1,9 +1,9 @@
 //
-//  GradientButton.m
+//  KDJGradientButton.m
 //  GradientButtons
 //
 //  Created by Kristopher Johnson on 2/26/10.
-//  Copyright 2010 Capable Hands Technologies, Inc.
+//  Copyright 2010, 2013 Capable Hands Technologies, Inc.
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -29,10 +29,10 @@
 
 
 @interface KDJGradientButton ()
-- (void)initLayers;
-- (void)initBorder;
-- (void)addShineLayer;
-- (void)addHighlightLayer;
+
+@property (nonatomic, weak) CAGradientLayer *shineLayer;
+@property (nonatomic, weak) CALayer         *highlightLayer;
+
 @end
 
 
@@ -73,7 +73,8 @@
 
 
 - (void)addShineLayer {
-    shineLayer = [CAGradientLayer layer];
+    CAGradientLayer *shineLayer = [CAGradientLayer layer];
+    self.shineLayer = shineLayer;
     shineLayer.frame = self.layer.bounds;
     shineLayer.colors = [NSArray arrayWithObjects:
                          (id)[UIColor colorWithWhite:1.0f alpha:0.4f].CGColor,
@@ -98,16 +99,17 @@
 
 
 - (void)addHighlightLayer {
-    highlightLayer = [CALayer layer];
+    CALayer *highlightLayer = [CALayer layer];
+    self.highlightLayer = highlightLayer;
     highlightLayer.backgroundColor = [UIColor colorWithRed:0.25f green:0.25f blue:0.25f alpha:0.75].CGColor;
     highlightLayer.frame = self.layer.bounds;
     highlightLayer.hidden = YES;
-    [self.layer insertSublayer:highlightLayer below:shineLayer];
+    [self.layer insertSublayer:highlightLayer below:self.shineLayer];
 }
 
 
 - (void)setHighlighted:(BOOL)highlight {
-    highlightLayer.hidden = !highlight;
+    self.highlightLayer.hidden = !highlight;
     [super setHighlighted:highlight];
 }
 
