@@ -76,20 +76,19 @@
     CAGradientLayer *shineLayer = [CAGradientLayer layer];
     self.shineLayer = shineLayer;
     shineLayer.frame = self.layer.bounds;
-    shineLayer.colors = [NSArray arrayWithObjects:
-                         (id)[UIColor colorWithWhite:1.0f alpha:0.4f].CGColor,
-                         (id)[UIColor colorWithWhite:1.0f alpha:0.2f].CGColor,
-                         (id)[UIColor colorWithWhite:0.75f alpha:0.2f].CGColor,
-                         (id)[UIColor colorWithWhite:0.4f alpha:0.2f].CGColor,
-                         (id)[UIColor colorWithWhite:1.0f alpha:0.4f].CGColor,
-                         nil];
-    shineLayer.locations = [NSArray arrayWithObjects:
-                            [NSNumber numberWithFloat:0.0f],
-                            [NSNumber numberWithFloat:0.5f],
-                            [NSNumber numberWithFloat:0.5f],
-                            [NSNumber numberWithFloat:0.8f],
-                            [NSNumber numberWithFloat:1.0f],
-                            nil];
+    
+    shineLayer.colors = @[(id)[UIColor colorWithWhite:1.0f alpha:0.4f].CGColor,
+                          (id)[UIColor colorWithWhite:1.0f alpha:0.2f].CGColor,
+                          (id)[UIColor colorWithWhite:0.75f alpha:0.2f].CGColor,
+                          (id)[UIColor colorWithWhite:0.4f alpha:0.2f].CGColor,
+                          (id)[UIColor colorWithWhite:1.0f alpha:0.4f].CGColor];
+    
+    shineLayer.locations = @[[NSNumber numberWithFloat:0.0f],
+                             [NSNumber numberWithFloat:0.5f],
+                             [NSNumber numberWithFloat:0.5f],
+                             [NSNumber numberWithFloat:0.8f],
+                             [NSNumber numberWithFloat:1.0f]];
+    
     [self.layer addSublayer:shineLayer];
 }
 
