@@ -25,10 +25,10 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "GradientButton.h"
+#import "KDJGradientButton.h"
 
 
-@interface GradientButton ()
+@interface KDJGradientButton ()
 - (void)initLayers;
 - (void)initBorder;
 - (void)addShineLayer;
@@ -36,7 +36,7 @@
 @end
 
 
-@implementation GradientButton
+@implementation KDJGradientButton
 
 
 #pragma mark -

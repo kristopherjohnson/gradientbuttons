@@ -7,34 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* GradientButtonsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GradientButtonsAppDelegate.m */; };
+		1D3623260D0F684500981E51 /* KDJGradientButtonsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* KDJGradientButtonsAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* GradientButtonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GradientButtonsViewController.xib */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28D7ACF80DDB3853001CB0EB /* GradientButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GradientButtonsViewController.m */; };
-		4E3C4CBA1137F90B00AF695C /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C4CB91137F90B00AF695C /* GradientButton.m */; };
+		2899E5220DE3E06400AC0155 /* KDJGradientButtonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* KDJGradientButtonsViewController.xib */; };
+		28D7ACF80DDB3853001CB0EB /* KDJGradientButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* KDJGradientButtonsViewController.m */; };
+		4E3C4CBA1137F90B00AF695C /* KDJGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C4CB91137F90B00AF695C /* KDJGradientButton.m */; };
 		4E3C4CE21137FADF00AF695C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3C4CE11137FADF00AF695C /* QuartzCore.framework */; };
 		4EC1D1B31138AFEC00D05DDA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EC1D1B21138AFEC00D05DDA /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* GradientButtonsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButtonsAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* GradientButtonsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButtonsAppDelegate.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* KDJGradientButtonsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDJGradientButtonsAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* KDJGradientButtonsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDJGradientButtonsAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* GradientButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradientButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* GradientButtonsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientButtonsViewController.xib; sourceTree = "<group>"; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* GradientButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButtonsViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* GradientButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButtonsViewController.m; sourceTree = "<group>"; };
+		2899E5210DE3E06400AC0155 /* KDJGradientButtonsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDJGradientButtonsViewController.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* KDJGradientButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDJGradientButtonsViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* KDJGradientButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDJGradientButtonsViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* GradientButtons_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButtons_Prefix.pch; sourceTree = "<group>"; };
-		4E3C4CB81137F90B00AF695C /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
-		4E3C4CB91137F90B00AF695C /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
+		4E3C4CB81137F90B00AF695C /* KDJGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDJGradientButton.h; sourceTree = "<group>"; };
+		4E3C4CB91137F90B00AF695C /* KDJGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDJGradientButton.m; sourceTree = "<group>"; };
 		4E3C4CE11137FADF00AF695C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4EC1D1B21138AFEC00D05DDA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* GradientButtons-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GradientButtons-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -58,12 +56,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* GradientButtonsAppDelegate.h */,
-				1D3623250D0F684500981E51 /* GradientButtonsAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* GradientButtonsViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* GradientButtonsViewController.m */,
-				4E3C4CB81137F90B00AF695C /* GradientButton.h */,
-				4E3C4CB91137F90B00AF695C /* GradientButton.m */,
+				1D3623240D0F684500981E51 /* KDJGradientButtonsAppDelegate.h */,
+				1D3623250D0F684500981E51 /* KDJGradientButtonsAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* KDJGradientButtonsViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* KDJGradientButtonsViewController.m */,
+				4E3C4CB81137F90B00AF695C /* KDJGradientButton.h */,
+				4E3C4CB91137F90B00AF695C /* KDJGradientButton.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -101,8 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4EC1D1B21138AFEC00D05DDA /* Icon.png */,
-				2899E5210DE3E06400AC0155 /* GradientButtonsViewController.xib */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				2899E5210DE3E06400AC0155 /* KDJGradientButtonsViewController.xib */,
 				8D1107310486CEB800E47090 /* GradientButtons-Info.plist */,
 			);
 			name = Resources;
@@ -144,6 +141,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KDJ;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GradientButtons" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -165,8 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* GradientButtonsViewController.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* KDJGradientButtonsViewController.xib in Resources */,
 				4EC1D1B31138AFEC00D05DDA /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,9 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* GradientButtonsAppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* GradientButtonsViewController.m in Sources */,
-				4E3C4CBA1137F90B00AF695C /* GradientButton.m in Sources */,
+				1D3623260D0F684500981E51 /* KDJGradientButtonsAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* KDJGradientButtonsViewController.m in Sources */,
+				4E3C4CBA1137F90B00AF695C /* KDJGradientButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  GradientButtonsAppDelegate.m
+//  GradientButton.h
 //  GradientButtons
 //
 //  Created by Kristopher Johnson on 2/26/10.
@@ -25,26 +25,12 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "GradientButtonsAppDelegate.h"
-#import "GradientButtonsViewController.h"
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
-@implementation GradientButtonsAppDelegate
-
-@synthesize window;
-@synthesize viewController;
-
-
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    [window addSubview:viewController.view];
-    [window makeKeyAndVisible];
+@interface KDJGradientButton : UIButton {
+    CAGradientLayer *shineLayer;
+    CALayer         *highlightLayer;
 }
-
-
-- (void)dealloc {
-    [viewController release];
-    [window release];
-    [super dealloc];
-}
-
 
 @end

@@ -1,9 +1,9 @@
 //
-//  GradientButton.h
+//  KDJGradientButtonsViewController.h
 //  GradientButtons
 //
 //  Created by Kristopher Johnson on 2/26/10.
-//  Copyright 2010 Capable Hands Technologies, Inc.
+//  Copyright 2010, 2013 Capable Hands Technologies, Inc.
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -26,11 +26,12 @@
 // SOFTWARE.
 
 #import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
 
-@interface GradientButton : UIButton {
-    CAGradientLayer *shineLayer;
-    CALayer         *highlightLayer;
+@interface KDJGradientButtonsViewController : UIViewController {
+
 }
 
+- (IBAction)colorButtonClicked:(UIButton *)sender;
+
 @end
+

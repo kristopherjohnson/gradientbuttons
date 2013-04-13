@@ -1,9 +1,9 @@
 //
-//  GradientButtonsViewController.m
+//  KDJGradientButtonsAppDelegate.m
 //  GradientButtons
 //
 //  Created by Kristopher Johnson on 2/26/10.
-//  Copyright 2010 Capable Hands Technologies, Inc.
+//  Copyright 2010, 2013 Capable Hands Technologies, Inc.
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -25,16 +25,28 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "GradientButtonsViewController.h"
+#import "KDJGradientButtonsAppDelegate.h"
+#import "KDJGradientButtonsViewController.h"
+
+@implementation KDJGradientButtonsAppDelegate
+
+@synthesize window;
+@synthesize viewController;
 
 
-@implementation GradientButtonsViewController
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.viewController = [[KDJGradientButtonsViewController alloc] init];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+    return YES;
+}
 
 
-- (IBAction)colorButtonClicked:(UIButton *)sender {
-    
-    // Set view's background to match button color
-    self.view.backgroundColor = sender.backgroundColor;
+- (void)dealloc {
+    [viewController release];
+    [window release];
+    [super dealloc];
 }
 
 
