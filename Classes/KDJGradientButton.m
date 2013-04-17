@@ -56,6 +56,18 @@
 }
 
 
+- (id)init {
+    return [self initWithFrame:CGRectZero];
+}
+
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    self.shineLayer.frame = self.layer.bounds;
+    self.highlightLayer.frame = self.layer.bounds;
+}
+
+
 - (void)initLayers {
     [self initBorder];
     [self addShineLayer];
