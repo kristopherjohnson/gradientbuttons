@@ -44,13 +44,13 @@
 
 
 - (void)awakeFromNib {
-    [self initLayers];
+    [self setUpLayers];
 }
 
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self initLayers];
+        [self setUpLayers];
     }
     return self;
 }
@@ -68,14 +68,14 @@
 }
 
 
-- (void)initLayers {
-    [self initBorder];
+- (void)setUpLayers {
+    [self setUpBorder];
     [self addShineLayer];
     [self addHighlightLayer];
 }
 
 
-- (void)initBorder {
+- (void)setUpBorder {
     CALayer *layer = self.layer;
     layer.cornerRadius = 8.0f;
     layer.masksToBounds = YES;
